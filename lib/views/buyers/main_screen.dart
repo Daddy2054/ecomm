@@ -1,5 +1,12 @@
 import 'package:flutter/material.dart';
 
+import 'nav_screens/account_screen.dart';
+import 'nav_screens/cart_screen.dart';
+import 'nav_screens/category_screen.dart';
+import 'nav_screens/home_screen.dart';
+import 'nav_screens/search_screen.dart';
+import 'nav_screens/store_screen.dart';
+
 class MainScreen extends StatefulWidget {
   const MainScreen({super.key});
 
@@ -8,13 +15,23 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
-  int _pageIndex=0;
+  int _pageIndex = 0;
+
+  final List<Widget> _pages = [
+    const HomeScreen(),
+    const CategoryScreen(),
+    const StoreScreen(),
+    const CartScreen(),
+    const SearchScreen(),
+    const AccountScreen(),
+  ];
+
   @override
   Widget build(BuildContext context) {
     return Scaffold(
       bottomNavigationBar: BottomNavigationBar(
         unselectedItemColor: Colors.black,
-        selectedItemColor: Colors.yellow.shade900,
+        selectedItemColor: Colors.red.shade900,
         iconSize: 40.0,
         showSelectedLabels: true,
         currentIndex: _pageIndex,
@@ -61,9 +78,7 @@ class _MainScreenState extends State<MainScreen> {
           ),
         ],
       ),
-      body: const Center(
-        child: Text('Main Screen'),
-      ),
+      body: _pages[_pageIndex],
     );
   }
 }
