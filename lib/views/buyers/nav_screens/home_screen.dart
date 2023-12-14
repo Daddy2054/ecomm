@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+import 'widgets/search_input_widget.dart';
 import 'widgets/welcome_text_widget.dart';
 
 class HomeScreen extends StatelessWidget {
@@ -12,6 +13,7 @@ class HomeScreen extends StatelessWidget {
       children: [
         WelcomeText(),
         SizedBox(height: 14),
+        SearchInputWidget(),
       ],
     );
   }
