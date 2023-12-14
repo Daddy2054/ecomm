@@ -17,3 +17,17 @@ dev_dependencies:
 
 flutter:
   uses-material-design: true
+
+  assets:
+    - assets/icons/
+
+  fonts:
+    - family: Brand-Bold
+      fonts:
+        - asset: assets/fonts/GemunuLibre-Bold.ttf
+       
+          
+    - family: Semi-Bold
+      fonts:
+        - asset: assets/fonts/GemunuLibre-SemiBold.ttf
+        
