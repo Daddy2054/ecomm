@@ -8,6 +8,7 @@ class MainScreen extends StatefulWidget {
 }
 
 class _MainScreenState extends State<MainScreen> {
+  int _pageIndex=0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -16,12 +17,17 @@ class _MainScreenState extends State<MainScreen> {
         selectedItemColor: Colors.yellow.shade900,
         iconSize: 40.0,
         showSelectedLabels: true,
-        currentIndex: 1,
+        currentIndex: _pageIndex,
+        onTap: (index) {
+          setState(() {
+            _pageIndex = index;
+          });
+        },
         enableFeedback: true,
         items: const [
           BottomNavigationBarItem(
             icon: Icon(Icons.home),
-            label: 'Home',
+            label: 'HOME',
           ),
           BottomNavigationBarItem(
             // icon: SvgPicture.asset(              'assets/icons/explore.svg',              width: 20,            ),
