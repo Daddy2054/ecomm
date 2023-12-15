@@ -33,7 +33,7 @@ class _MainScreenState extends State<MainScreen> {
         unselectedItemColor: Colors.black,
         selectedItemColor: Colors.red.shade900,
         iconSize: 40.0,
-        showSelectedLabels: true,
+        showUnselectedLabels: true,
         currentIndex: _pageIndex,
         onTap: (index) {
           setState(() {
