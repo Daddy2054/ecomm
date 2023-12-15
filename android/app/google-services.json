@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "410430245106",
+    "project_id": "ecomm-51a44",
+    "storage_bucket": "ecomm-51a44.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:410430245106:android:7fe5a64fc66140e943a86b",
+        "android_client_info": {
+          "package_name": "com.example.ecomm"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBb3FoB2-NMSUqWl44V35KyUJTJz0XA4w0"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
